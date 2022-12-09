@@ -1,0 +1,100 @@
+// A prova a seguir será composta de 3 questões.
+
+// Além da corretude e performance das respostas, será avaliado a organização e estrutura do código. Nesse sentido,
+// recomendamos o bom senso no uso de bibliotecas e códigos externos para não prejudicar a avaliação. Na dúvida faça a
+// função sem o auxílio externo e deixe um comentário com a outra possibilidade.
+// Recomendamos que durante o processo de testes do algoritmo, o candidato avalie outras entradas além das sugeridas nos exemplos
+// Boa prova!
+
+/*
+Questão 1
+
+Uma loja vende n itens diversos. O preço de cada item i é p(i). 
+O dono da loja vai fazer uma promoção: se um cliente comprar pelo menos x itens, os y mais baratos desses saem de graça. O valor de x é sempre maior ou igual y.
+O dono ainda não decidiu os valores exatos de x e y. Para ajudar na decisão, ele pediu para você fazer uma função que, para um dado valor de x e y, determine o valor total máximo dos itens que serão levados de graça. 
+-Entrada:
+q: inteiro com o número de itens da loja
+vetp: vetor de inteiros contendo os preços de cada item na loja, onde p(i) é o preço do item i
+x: número de itens comprados
+y: número de itens que sairão de graça, seguindo a regra da promoção
+-Saída: número inteiro que é o valor máximo total dos itens que sairão de graça na compra.
+
+-----
+Exemplos:
+
+q=5
+vetp={5, 3, 1, 5, 2}
+x=3
+y=2
+Resultado: 5+3=8
+-----
+q=6
+vetp={5, 3, 1, 5, 2, 7}
+x=1
+y=1
+Resultado: 7
+-----
+q=7
+vetp={5, 3, 1, 5, 2, 2, 5}
+x=6
+y=3
+Resultado: 2+2+3=7
+-----
+*/
+
+
+/*
+Questão 2
+
+O seu avô te de deu um tabuleiro de xadrez especial para que você possa praticar. 
+Esse tabuleiro é uma grid com n linhas e m colunas com um número inteiro não negativo escrito em cada célula.
+Você foi desafiado a colocar um bispo no tabuleiro de forma que a soma de todas as células que podem ser atacadas pelo bispo seja máxima. 
+O bispo ataca sempre em diagonal a partir de onde está, sem limite para a distância em células que pode percorrer. A célula onde o bispo é colocado também é considerada como atacada.
+Faça uma função que calcule qual é o valor máximo das células que podem ser atacadas por um bispo para uma dada entrada.
+-Entrada:
+n=número de linhas
+m=número de colunas
+tab=matriz de inteiros contendo o valor (inteiro não negativo) para cada célula.
+-Saída: valor inteiro com a soma do valor máximo das casas atacadas por um posicionamento do bispo
+
+-----
+Exemplos:
+
+n=4 
+m=4
+tab={1, 2, 2, 1,
+     2, 4, 2, 4,
+     2, 2, 3, 1,
+     2, 4, 2, 4}
+
+Resultado: 20
+-----
+n=2 
+m=1
+tab={1,
+     0}
+
+Resultado: 1
+-----
+n=3 
+m=3
+tab={0, 1, 1,
+     1, 0, 1,
+     1, 1, 0}
+
+Resultado: 3
+-----
+*/
+
+/*
+Questão 3
+
+     Valor de Expressão Polonesa inversa. Suponha que posf é uma string que guarda uma
+     expressão aritmética em notação posfixa. Suponha que posf não é vazio e contém
+     somente os operadores  +,  -,  *  e  /  (todos exigem dois operandos) e números inteiros maiores ou iguais a zero.
+     Escreva um algoritmo que receba posf e calcule o valor da expressão.
+     mais detalhes sobre o método polones inverso: http://pt.wikipedia.org/wiki/Nota%C3%A7%C3%A3o_polonesa_inversa.
+
+     Exemplos: "4 5 + 2 /" = 4.5
+               "12 5 * 2 3 * - 8 2 * /" = 3.375
+*/
